@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Colors</title>
+</head>
+<body>
+  <style media="screen">
+  *{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  .wrapper{
+    margin: 0 auto;
+    max-width: 1170px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #word{
+    font-size: 8.75rem;
+    font-weight: bold;
+    margin: 200px 0 100px 0;
+  }
+  #btn{
+    align-self: center;
+    margin: 50px 0 0 0;
+  }
+  #inp{
+    color: #4E4F4A;
+    padding: 5px;
+    align-self: center;
+    width: 500px;
+    border: 2px solid silver;
+  }
+  #inp:hover{
+    border: 2px solid blue;
+    margin: 5px 0  0 0;
+  }
+  </style>
+<div class="wrapper">
+  <p id="word">Kazakh style</p>
+<input placeholder="type color" id="inp"type="text" name="" value="">
+<button type="button" id ="btn"  onclick="check()"name="button">send</button>
+</div>
+<script type="text/javascript">
+alert("Ойын шарты: түстердің атын дұрыс жазу");
+  function check(){
+    var word = document.getElementById("word");
+    var input = document.getElementById('inp').value.trim();
+      if(input == "red"){
+        word.style.color = "red";
+      }else if(input == "blue"){
+        word.style.color = "blue";
+      }else if(input == "gold"){
+        word.style.color = "gold";
+      }else if(input == "silver"){
+        word.style.color = "silver";
+      }else if(input == "brown"){
+        word.style.color = "brown";
+      }else if(input == "purple"){
+        word.style.color = "purple";
+      }else if(input == "black"){
+        word.style.color = "black";
+      }else if(input == "orange"){
+        word.style.color = "orange";
+      }else if(input == "green"){
+        word.style.color = "green";
+      }else if(input == "white"){
+        word.style.color = "white";
+      }
+  }
+
+
+</script>
+</body>
+</html>
