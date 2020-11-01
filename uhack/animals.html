@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Жануарлар</title>
+  <script src="libs/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    alert("Ойынның шарты жануарлардың атын дұрыс жазу")
+      function Press(){
+     var text = document.getElementById('text').value.trim();
+       if(text === 'lion'){
+      $('#photo').attr('src','img/lion.jpg');
+    }else if(text === 'tiger'){
+      $('#photo').attr('src','img/tiger.jpg');
+    }else if(text === 'coalo'){
+      $('#photo').attr('src','img/coalo.jpg');
+    }else if(text === 'panda'){
+      $('#photo').attr('src','img/panda.jpg');
+    }else if(text === 'wolf'){
+      $('#photo').attr('src','img/wolf.jpg');
+    }else if(text === 'geeraf'){
+      $('#photo').attr('src','img/geeraf.jpg');
+    }else if(text === 'leopard'){
+      $('#photo').attr('src','img/leopard.jpg');
+    }else if(text === 'monkey'){
+      $('#photo').attr('src','img/monkey.jpg');
+    }else if(text === 'dog'){
+      $('#photo').attr('src','img/dog.jpg');
+    }else if(text === 'cat'){
+      $('#photo').attr('src','img/cat.jpg');
+    }else if(text === 'rabbit'){
+      $('#photo').attr('src','img/rabbit.jpg');
+    }else if(text === 'elephant'){
+      $('#photo').attr('src','img/elephant.jpg');
+    }else if(text === 'panther'){
+      $('#photo').attr('src','img/panther.jpg');
+    }else if(text === 'cow'){
+      $('#photo').attr('src','img/cow.jpg');
+    }else if(text === 'sheep'){
+      $('#photo').attr('src','img/sheep.jpg');
+    }else if(text === 'hen'){
+      $('#photo').attr('src','img/hen.jpg');
+    }else if(text === 'rat'){
+      $('#photo').attr('src','img/rat.jpg');
+    }else if(text === 'bear'){
+      $('#photo').attr('src','img/bear.jpg');
+    }else if(text === 'fox'){
+      $('#photo').attr('src','img/fox.jpg');
+    }else if(text === 'eagle'){
+      $('#photo').attr('src','img/eagle.jpg');
+    }else if(text === 'owl'){
+      $('#photo').attr('src','img/owl.jpg');
+    }else if(text === 'kangaroo'){
+      $('#photo').attr('src','img/kangaroo.jpg');
+    }else if(text === 'horse'){
+      $('#photo').attr('src','img/horse.jpg');
+    }else{
+        $('#photo').attr('src','');
+          $('#photo').attr('alt','wrong name of animal');
+    }
+     }
+       </script>
+  </head>
+  <body>
+    <style >
+    .wrapper{
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+     .image{
+       margin: 150px 0 50px 0;
+       border: 2px solid silver;
+       height: 400px;
+       width: 500px;
+
+     }
+     .image #photo{
+       height: 100%;
+       width: 100%;
+     }
+     #text{
+       margin: 0 0 20px 0;
+     }
+    </style>
+    <div class="wrapper">
+      <div class="image">
+        <img id='photo'>
+      </div><br>
+      <input placeholder="type name of animal"type="text" id="text">
+      <button id="check" onclick="Press()">check</button>
+    </div>
+  </body>
+</html>
