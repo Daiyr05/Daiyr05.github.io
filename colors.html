@@ -41,6 +41,17 @@
     border: 2px solid blue;
     margin: 5px 0  0 0;
   }
+  @media (max-width:810px) {
+    .wrapper{
+      max-width: 710px;
+    }
+    *{
+      font-size: 13px;
+    }
+    #inp{
+        width: 300px;
+    }
+  }
   </style>
 <div class="wrapper">
   <p id="word">Kazakh style</p>
@@ -52,6 +63,7 @@ alert("Ойын шарты: түстердің атын дұрыс жазу");
   function check(){
     var word = document.getElementById("word");
     var input = document.getElementById('inp').value.trim();
+    input= input.toLowerCase();
       if(input == "red"){
         word.style.color = "red";
       }else if(input == "blue"){

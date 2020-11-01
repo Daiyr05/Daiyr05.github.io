@@ -8,6 +8,7 @@
     alert("Ойынның шарты жануарлардың атын дұрыс жазу")
       function Press(){
      var text = document.getElementById('text').value.trim();
+     text = text.toLowerCase();
        if(text === 'lion'){
       $('#photo').attr('src','img/lion.jpg');
     }else if(text === 'tiger'){
@@ -62,7 +63,10 @@
        </script>
   </head>
   <body>
-    <style >
+    <style media="screen">
+    *{
+      font-size: 16px;
+    }
     .wrapper{
       max-width: 1170px;
       margin: 0 auto;
@@ -84,6 +88,47 @@
      #text{
        margin: 0 0 20px 0;
      }
+   @media (max-width:910px){
+     .wrapper{
+       max-width: 800px;
+     }
+   }
+     @media (max-width:810px){
+       .wrapper{
+         max-width: 710px;
+       }
+       .image{
+         height: 450px;
+         width: 550px;
+       }
+   }
+   @media (max-width:710px){
+     .wrapper{
+       max-width: 610px;
+     }
+     .image{
+       height: 500px;
+       width: 600px;
+     }
+ }
+ @media (max-width:610px){
+   .wrapper{
+     max-width: 510px;
+   }
+   .image{
+     height: 550px;
+     width: 640px;
+   }
+}
+@media (max-width:410){
+  .wrapper{
+    max-width: none;
+  }
+  .image{
+    height: 500px;
+    width: 600px;
+  }
+}
     </style>
     <div class="wrapper">
       <div class="image">
